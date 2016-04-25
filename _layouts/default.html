@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <title>welcome</title>
+  <link rel="stylesheet" href="{{site.baseurl}}/css/common.css">
 </head>
 <body>
 
 <header>
   <strong>Portfolio</strong>
+  {% include nav.html navclass='nav-top' %}
 </header>
-<nav>
-  <ul>
-    <li><a href="{{site.baseurl}}/index.html">Home</a></li>
-    <li><a href="{{site.baseurl}}/news.html">News</a></li>
 
-  </ul>
-</nav>
   {{ content }}
 
+<footer>
+  <p>&copy 2016 Portfolio site</p>
+  {% include nav.html navclass='nav-top' %}
+</footer>
 </body>
 </html>
